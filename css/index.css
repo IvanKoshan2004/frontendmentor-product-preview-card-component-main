@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    --cream-color: hsl(30, 38%, 92%);
+    --dark-cyan-color: hsl(158, 36%, 37%);
+    --dark-blue-color: hsl(228, 12%, 48%);
+    --very-dark-blue-color: hsl(212, 21%, 14%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    border-radius: 12px;
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    overflow: hidden;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template: 1fr 1.5fr / 1fr;
+        width: 100%;
+        position:static;
+        transform: translate(0%, 0%);
+    }
+    .wrapper {
+        width: 100%;
+        padding: 28px 14px;
+    }
+}
+.container__textarea {
+    background-color: var(--white-color);
+    padding: 32px;
+}
+.container__image {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.heading {
+    color: var(--dark-blue-color);
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.perfume-title {
+    color: var(--very-dark-blue-color);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 1em 1em 1em 0;
+}
+.perfume-description {
+    color: var(--dark-blue-color);
+    line-height: 18px;
+}
+.price-container {
+    display: flex;  
+    justify-content: flex-start;
+    margin: 28px 0;
+}
+.price {
+    color: var(--dark-cyan-color);
+    font-family: "Fraunces", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+.old-price {
+    color: var(--dark-blue-color);
+    text-align: right;
+    text-decoration: line-through;
+    align-self: center;
+    margin-left: 24px;
+}
+.button {
+    background-color: var(--dark-cyan-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 14px 0;
+    width: 100%;
+}
+.button__label {
+    font-weight: 700;
+    vertical-align: middle;
+}
+.button__icon {
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+body {
+    background-color: var(--cream-color);
+}
+
