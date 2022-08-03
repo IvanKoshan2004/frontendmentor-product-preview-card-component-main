@@ -3,10 +3,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-    box-sizing: border-box;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -32,7 +32,7 @@
     
     overflow: hidden;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 660px) {
     .container {
         grid-template: 1fr 1.5fr / 1fr;
         width: 100%;
@@ -40,8 +40,8 @@
         transform: translate(0%, 0%);
     }
     .wrapper {
-        width: 100%;
         padding: 28px 14px;
+        width: 100%;
     }
 }
 .container__textarea {
