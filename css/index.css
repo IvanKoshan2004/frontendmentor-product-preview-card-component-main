@@ -108,7 +108,7 @@
     color: var(--white-color);
     padding: 14px 0;
     width: 100%;
-    transition: box-shadow 0.1s;
+    transition: box-shadow 0.2s;
 }
 .button:hover {
     cursor: pointer;
