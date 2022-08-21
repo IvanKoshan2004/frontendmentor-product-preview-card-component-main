@@ -13,11 +13,11 @@ Users should be able to:
 
 Desktop Solution
 
-![](https://github.com/IvanKoshan2004/frontendmentor-product-review-card-component-main/tree/gh-pages/screenshots/desktop-screenshot.png)
+![](screenshots/desktop-screenshot.png)
 
 Mobile Solution
 
-![](https://github.com/IvanKoshan2004/frontendmentor-product-review-card-component-main/tree/gh-pages/screenshots/mobile-screenshot.png)
+![](screenshots/mobile-screenshot.png)
 
 
 ### Links
